@@ -3,12 +3,32 @@
   <display-name>TwiInfluencer</display-name>
  <servlet>
         <servlet-name>DispCalc</servlet-name>
-        <servlet-class>com.sampleapp.web</servlet-class>
+        <servlet-class>com.sampleapp.web.DispCalc</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>DispCalc</servlet-name>
         <url-pattern>TwitterInfluenceAnalyzer/DispCalc</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DisplayAll</servlet-name>
+        <servlet-class>com.sampleapp.db.DisplayAll</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DisplayAll</servlet-name>
+        <url-pattern>/TwitterInfluenceAnalyzer/DisplayAll</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ClearAll</servlet-name>
+        <servlet-class>com.sampleapp.db.ClearAll</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ClearAll</servlet-name>
+        <url-pattern>/TwitterInfluenceAnalyzer/ClearAll</url-pattern>
     </servlet-mapping>
 
 </web-app>
